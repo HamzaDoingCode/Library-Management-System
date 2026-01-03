@@ -179,7 +179,7 @@ def addBook(library):
     id = int(input("Enter ID of the book:\n> "))
 
     if  id in library.books: # Checks whether the given ID is free or not
-        print(f"The given ID is already alotted to {library.books[id].getTitle()}")
+        print(f"The given ID is already alotted to the book named, {library.books[id].getTitle()}.")
         return
     
     title = input("Write title of the book:\n> ")
@@ -204,7 +204,7 @@ def add_Member(library):
     id = int(input("Enter ID of the reader:\n> "))
 
     if  id in library.members: # Checks whether the given ID is free or not
-        print(f"The given ID is already alotted to {library.members[id].getName()}")
+        print(f"The given ID is already alotted to the reader named, {library.members[id].getName()}.")
         return
     
     name = input("Write name of the reader:\n> ")
@@ -327,6 +327,7 @@ def main():
             print("The entered choice is not valid")
 if __name__ == "__main__":
     main()
+
 
 
 
